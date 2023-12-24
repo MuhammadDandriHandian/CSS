@@ -1,0 +1,60 @@
+.icon {
+    background-color: red;
+    text-align: center;
+}
+
+.icon2 {
+    /* biar kaya span */
+    display: inline;
+    background-color:blue;
+}
+
+.hilang {
+    background-color: aqua;
+        /* biar kaya div, ada none buat ilang */
+        display: block;
+}
+
+.html {
+    background-color: green;
+}
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    background-color: silver;
+    width: 200px;
+    text-align: center;
+    margin: 0 30px;
+    border: 1px solid black;
+}
+
+div.gambarVS{
+    text-align: center;
+}
+
+.gambarVS img {
+    width: 300px;
+}
+
+div.h1 {
+    background-color: yellow;
+}
+
+div.h2 {
+    background-color: burlywood;
+    font-style: italic;
+}
+
+div.body {
+    background-color: beige;
+    text-align: justify;
+}
+
+div.body span {
+    background-color: green;
+}

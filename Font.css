@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p.lorem {
+    font-size: 20px;
+}
+
+p {
+    font-weight:bold;
+}
+
+h2 {
+    font-variant: small-caps;
+    font-weight: normal;
+    font-style: italic;
+}

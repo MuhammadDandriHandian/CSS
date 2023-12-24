@@ -1,0 +1,58 @@
+.div div {
+    display: inline-block;
+}
+
+/* overflow = kondisi bila margin bottom a lalu margin top a maka margin tidak akan dijumlah
+untuk melawan overflow bisa menggunakan negatif margin (margin-top: -50px) */
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+}
+
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px 20px 50px 50px;
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.empat {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
+
+.lima {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.enam {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+
+.tujuh {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+/* biar ada ditengah */
+    margin-right: auto;
+    margin-left: auto;
+}

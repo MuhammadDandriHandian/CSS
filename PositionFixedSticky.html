@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <link rel="stylesheet" href="./PositionStaticRelativ.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        .salmon {
+            background-color: salmon;
+            height: 800px;
+        }
+        .salmon .position1 {
+            background-color: grey;
+            padding: 20px;
+            /* biar klo discrol kontenya ikut(harus pake top) */
+            position: fixed;
+            top: 20px;
+            right: 20px;
+        }
+        .green {
+            background-color: green;
+            height: 800px;
+        }
+        .green .position2 {
+            background-color: red;
+            /* biar discrol kontennya ikut tapi tetep di layoutnya(biasanya buat gambar) */
+            position: sticky;
+            padding: 20px;
+            left: 20px;
+            top: 20px;
+        }
+        .blue {
+            background-color: blue;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div class="salmon">
+        <div class="position1">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</div>
+    </div>
+    <div class="green">
+        <div class="position2">Lorem, ipsum dolor sit amet consectetur adipisicing </div>
+    </div>
+    <div class="blue">
+        <div class="position3">Lorem ipsum dolor sit amet consectetur</div>
+    </div>
+    
+</body>
+</html>

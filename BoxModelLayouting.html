@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Layouting</title>
+    <style>
+        .satu {
+            background-color: coral;
+            width: 200px;
+            height: 200px;
+            margin: 20px auto;
+            padding: 50px 50px;
+            border: blue solid 10px;
+        }
+        .dua {
+            border-top: double red 5px;
+            border-bottom: 5px dashed black;
+        }  
+        div {
+            width: 600px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            /* biar width height: tetap 600px */
+            box-sizing: border-box;
+        } 
+        .tiga {
+            background-color:cadetblue;
+            border:10px dotted brown;
+        }
+        .empat {
+            background-color:antiquewhite ;
+            border: 10px solid aqua
+        }
+    </style>
+</head>
+<body>
+    <div class="satu">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Doloribus adipisci iure vero iusto aut itaque fugiat facilis 
+        qui id ullam! Quaerat, expedita. Minus, quia! Sed repellendus 
+        eaque minus totam labore.</div>
+    <div class="dua">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        A quae, facilis nemo, ducimus, qui quisquam inventore nulla 
+        quod aliquam vel non similique veritatis sint distinctio dicta 
+        beatae voluptatibus maxime quaerat.</div>
+    <div class="tiga">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit temporibus deserunt praesentium tempora animi labore deleniti necessitatibus veniam voluptate facere cumque consectetur aliquam, dolorum aut, distinctio recusandae maiores odio quidem.</div>
+    <div class="empat">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur incidunt repellat minus quos dicta, provident, nemo perferendis ipsum voluptate, dolorem ullam aliquam quo impedit rem ipsam blanditiis omnis animi voluptatem!</div>
+</body>
+</html>

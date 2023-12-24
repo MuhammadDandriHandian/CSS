@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear</title>
+    <style>
+        .container{
+            width: 500px;
+            border: 3px solid black;
+            margin: auto;
+            /* salah satu solusi biar bordernya menyesuaikan konten(rekomen)*/
+            overflow: auto;
+        }
+        .kiri{
+            background-color: yellow;
+            width: 100px;
+            height: 500px;
+            float: left;
+        }
+        .tengah {
+            background-color: coral;
+            width: 300px;
+            height: 500px;
+            float: left;
+        }
+        .kanan {
+            background-color: chocolate;
+            width: 100px;
+            height: 500px;
+            float: left;
+        }
+        .container2 {
+            width: 500px;
+            border: 3px solid black;
+            margin: auto;
+            margin-top: 10px;
+
+        }
+        img {
+            width: 200px;
+            margin: 10px;
+            float:left
+        }
+        /* salah dua solusi biar border menyesuaikan konten, floatnya dibersihkan */
+        .clear {
+            clear: left;
+        }
+
+        /* Menggunakan clearfixnya Nicholas Gallagher */
+        /**
+        * For modern browsers
+        * 1. The space content is one way to avoid an Opera bug when the
+        *    contenteditable attribute is included anywhere else in the document.
+        *    Otherwise it causes space to appear at the top and bottom of elements
+        *    that are clearfixed.
+        * 2. The use of `table` rather than `block` is only necessary if using
+        *    `:before` to contain the top-margins of child elements.
+        */
+        .cf:before,
+        .cf:after {
+            content: " "; /* 1 */
+            display: table; /* 2 */
+        }
+
+        .cf:after {
+            clear: both;
+        }
+
+        /**
+        * For IE 6/7 only
+        * Include this rule to trigger hasLayout and contain floats.
+        */
+        .cf {
+            *zoom: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kiri"></div>
+        <div class="tengah"></div>
+        <div class="kanan"></div>
+    </div>
+    <div class="container2">
+        <img src="../HTML/assets/foto.jpg" alt="Palestine" title="Palestine">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse necessitatibus quos mollitia, minus laudantium voluptates officia voluptate nisi, deserunt id provident explicabo sed corporis error, labore culpa consequuntur pariatur beatae.</p>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="container2 cf">
+        <img src="../HTML/assets/foto.jpg" alt="Palestine" title="Palestine">
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse necessitatibus quos mollitia, minus laudantium voluptates officia voluptate nisi, deserunt id provident explicabo sed corporis error, labore culpa consequuntur pariatur beatae.</p>
+            <div class="clear"></div>
+        </div>
+    </div>
+</body>
+</html>

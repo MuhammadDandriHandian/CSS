@@ -1,0 +1,28 @@
+input:focus {
+    background:silver;
+}
+
+div:hover {
+    color: red;
+}
+
+h1:hover {
+    color: red;
+}
+
+span:hover {
+    color: red;
+}
+
+a:active{
+    color: aqua;
+}
+
+.klik:link {
+    color:chartreuse
+}
+
+a:visited {
+    color: yellow;
+}
+

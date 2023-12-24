@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute dan Fixed</title>
+    <style>
+        .container {
+            border: 3px solid violet;
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            position: relative;
+        }
+        .container div, .index div {
+            width: 150px;
+            height: 150px;
+        }
+        .green {
+            background-color: green;
+        }
+        .blue {
+            background-color: blue;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .black {
+            background-color: black;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .yellow {
+            background-color: yellow;
+            position: absolute;
+            /* biar ada didepan(klo yg lain mau ada di yg lebih depan kasih z-index lebih besar)
+            Klo mau dipaling belakang kasih z-index minus */
+            z-index: 1;
+        }
+        .corl {
+            background-color: coral;
+            position: absolute;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .purple {
+            background-color: purple;
+            position: absolute;
+            margin-top: 100px;
+            margin-left: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="green"></div>
+        <div class="blue"></div>
+        <div class="black"></div>
+    </div>
+    <br>
+    <div class="index">
+        <div class="yellow"></div>
+        <div class="corl"></div>
+        <div class="purple"></div>
+    </div>
+    
+</body>
+</html>
